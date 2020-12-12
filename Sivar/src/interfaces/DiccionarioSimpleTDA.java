@@ -6,13 +6,13 @@ public interface DiccionarioSimpleTDA {
 	void inicializarDiccionarioSimple();
 
   
-    void agregar(int clave, int valor);
+    void agregar(int clave, double valor);
 
    
     void eliminar(int clave);
 
    
-    int recuperar(int clave);
+    double recuperar(int clave);
 
     
     ConjuntoTDA claves();
