@@ -9,7 +9,7 @@ public class DiccionarioSimple implements DiccionarioSimpleTDA {
 
     class Nodo {
         int clave;
-        int valor;
+        double valor;
         Nodo sig;
     }
 
@@ -21,7 +21,7 @@ public class DiccionarioSimple implements DiccionarioSimpleTDA {
 
 	
     
-    public void agregar(int clave, int valor) {
+    public void agregar(int clave, double valor) {
         Nodo actual = this.inicio;
         while (actual != null && actual.clave != clave)
             actual = actual.sig;
@@ -53,7 +53,7 @@ public class DiccionarioSimple implements DiccionarioSimpleTDA {
 
 	
     
-    public int recuperar(int clave) {
+    public double recuperar(int clave) {
         Nodo actual = this.inicio;
         while (actual.clave != clave)
             actual = actual.sig;
